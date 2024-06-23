@@ -33,7 +33,9 @@ const config: Config = {
     [
       'classic',
       {
+        docs: false,
         blog: {
+          routeBasePath: '/',
           showReadingTime: true,
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -57,32 +59,11 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/daveharrington',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-          ],
-        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Dave Harrington.`,
     },
