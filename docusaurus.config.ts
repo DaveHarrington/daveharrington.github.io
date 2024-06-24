@@ -79,6 +79,10 @@ const config: Config = {
           title: 'More',
           items: [
             {
+              label: 'RSS Feed',
+              to: '/rss.xml',
+            },
+            {
               label: 'About',
               to: '/about',
             },
