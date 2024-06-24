@@ -64,6 +64,15 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'About',
+              to: '/about',
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Dave Harrington.`,
     },
